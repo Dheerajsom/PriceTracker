@@ -28,5 +28,14 @@ A web application to track the prices of items across various online platforms. 
    cd price-tracker/backend
 
 2. Install dependencies:
-```bash
+    ```bash
     pip install -r requirements.txt
+
+3. Set up enviroment variables: Create a .env file with:
+    ```bash
+    DATABASE_URL=sqlite:///price_tracker.db
+    SECRET_KEY=your_secret_key
+
+4. Run the backend server:
+    ```bash
+    python app.py
