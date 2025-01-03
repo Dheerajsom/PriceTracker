@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from scraper import scrape_product
+import scraper 
 from database import (
     initialize_database,
     add_product,
@@ -19,7 +19,7 @@ def add_product_endpoint():
     price_threshold = data.get("threshold")
 
     # Scrape product details
-    product = scrape_product(product_url)
+    product = scraper.scrape_product(product_url)
     if not product:
         return jsonify({"error": "Failed to scrape product data"}), 400
 
