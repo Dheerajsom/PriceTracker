@@ -50,7 +50,7 @@ form label {
   display: block;
   margin: 10px 0 5px;
 }
-
+  
 form input {
   width: 100%;
   padding: 10px;
@@ -60,7 +60,7 @@ form input {
 }
 
 form button {
-  background: #0073e6;
+  background: #f30808;
   color: #fff;
   border: none;
   padding: 10px 15px;
